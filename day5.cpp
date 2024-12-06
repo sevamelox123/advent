@@ -2,6 +2,10 @@
 #include <vector>
 #include <cstdio>
 using namespace std;
+struct PlayerPos{
+    int _ypos = 0;
+    int _xpos = 0;
+};
 int main()
 {
     FILE *input;
