@@ -9,7 +9,7 @@ struct PlayerPos{
 int main()
 {
     FILE *input;
-    input = fopen("input1.txt", "r");
+    input = fopen("input11.txt", "r");
     char c;
     int width = 0, height = 0;
     vector<vector<char>*> pivo;
