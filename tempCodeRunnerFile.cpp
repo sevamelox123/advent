@@ -1,1 +1,2 @@
-        // cout << a << " " << b <<endl;
+        if (c == '.')
+            break;
