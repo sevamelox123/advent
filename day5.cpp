@@ -7,7 +7,7 @@ int main()
     FILE *input = fopen("input1.txt", "r");
     std::string line;
     std::vector<int> _line;
-    std::map<int , int> test;
+    std::map<int, int> test;
     char c;
     int counter = 0;
     u_int64_t sum = 0;
@@ -36,9 +36,8 @@ int main()
             for (int f = 0; f < (c - '0'); f++)
             {
                 line += std::to_string(i / 2);
-                test[i/2]++;
+                test[i / 2]++;
                 _line.push_back(i / 2);
-
             }
         }
     }
@@ -69,8 +68,9 @@ int main()
         sum += i * _line[i];
     }
     std::cout << sum << std::endl;
-    // for (const auto& pair : test) {
-    //     std::cout << pair.first << ": " << pair.second << std::endl;
-    // }
+    for (const auto &pair : test)
+    {
+        std::cout << pair.first << ": " << pair.second << std::endl;
+    }
     return 0;
 }
